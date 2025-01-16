@@ -1,0 +1,158 @@
+@media (max-width: 1024px) {
+    /* Adjust spacing and sizes for medium screens */
+    nav {
+      padding: 0.5rem 1rem;
+    }
+  
+    .flex.space-x-6 {
+      gap: 1rem;
+    }
+  
+    .text-2xl {
+      font-size: 1.25rem;
+    }
+  
+    .text-3xl {
+      font-size: 1.5rem;
+    }
+  
+    .w-16 {
+      width: 3rem;
+    }
+  
+    .h-16 {
+      height: 3rem;
+    }
+  
+    .mr-24 {
+      margin-right: 1rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Stack items vertically on mobile */
+    nav {
+      flex-direction: column;
+      border-radius: 2rem;
+      padding: 1rem;
+      gap: 1rem;
+    }
+  
+    /* Center logo and company name */
+    nav > div:first-child {
+      justify-content: center;
+      width: 100%;
+    }
+  
+    /* Navigation links */
+    .flex.space-x-6 {
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .flex.space-x-6 a {
+      margin-top: 0.5rem;
+      font-size: 1.25rem;
+      text-align: center;
+      width: 100%;
+      padding: 0.5rem;
+    }
+  
+    /* Profile section */
+    .flex.items-center.mr-24 {
+      margin-right: 0;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .w-14, .h-14 {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    nav {
+      margin: 0.5rem;
+      padding: 0.5rem;
+    }
+  
+    h1.text-3xl {
+      font-size: 1.25rem;
+    }
+  
+    .flex.space-x-6 a {
+      font-size: 1rem;
+    }
+  
+    .text-2xl {
+      font-size: 1rem;
+    }
+  
+    .w-16, .h-16 {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  
+    /* Adjust profile section */
+    .flex.items-center img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+  
+  /* Add hamburger menu styles */
+  .menu-button {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-button {
+      display: block;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 20;
+    }
+  
+    /* Hide navigation by default on mobile */
+    .flex.space-x-6 {
+      display: none;
+    }
+  
+    /* Show navigation when active */
+    .flex.space-x-6.active {
+      display: flex;
+    }
+  }
+  /* Navigation Menu */
+.nav-menu {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #8f84a8;
+}
