@@ -6,7 +6,6 @@ import EmergencyPage from './pages/EmergencyPage'
 import ContactusPage from './pages/ContactusPage'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import TripPlanning from './pages/TripPlanning';
-import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,7 +17,6 @@ function App() {
        <Route path="/emergency"  element={<EmergencyPage/>} />
         <Route path="/contact"  element={<ContactusPage/>} />
         <Route path="/tripplanning"  element={<TripPlanning/>} />
-        <Route path='/f' element={<Footer/>} />
       </Routes>
     </div>
   )
