@@ -183,7 +183,7 @@ function Navbar_HomePage() {
       )}
 
       {/* Button for Testing Sign In/Sign Up */}
-      <div className="fixed bottom-5 left-5">
+      <div className="fixed bottom-5 z-50 left-5">
         <button
           onClick={handleSignInOrSignUp}
           className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600"

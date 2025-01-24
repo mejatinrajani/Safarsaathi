@@ -133,7 +133,7 @@ const TripPlanningForm = () => {
             {/* Submit Button */}
             <button
               type="submit"
-              className="w-full mt-4 py-3 text-white bg-blue-500 rounded-lg text-lg font-semibold transform transition-all duration-500 ease-out hover:scale-105 hover:bg-blue-600 focus:outline-none"
+              className="w-1/2 mt-4 items-center flex justify-center ml-44 py-3 bg-[#DF898B] border-2 border-black rounded-2xl text-lg text-black font-semibold transform transition-all duration-500 ease-out hover:scale-105 focus:outline-none"
             >
               SUBMIT
             </button>

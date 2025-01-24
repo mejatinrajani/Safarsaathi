@@ -13,6 +13,7 @@ function Navbar_HomePage() {
   };
 
   const handleSignInOrSignUp = () => {
+    console.log('clicked')
     setShowPopup(true);
     setTimeout(() => setShowPopup(false), 4000); // Hide popup after 4 seconds
   };
@@ -175,7 +176,7 @@ function Navbar_HomePage() {
 
       {/* Popup Notification */}
       {showPopup && (
-        <div className="fixed top-30 right-10 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg z-50">
+        <div className="fixed z-50 top-30 right-10 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg">
           <span className="text-2xl text-white font-semibold flex items-center">
             <span className="rotating-coin">🪙</span> <span className="ml-2">+1 Coin</span>
           </span>
@@ -183,7 +184,7 @@ function Navbar_HomePage() {
       )}
 
       {/* Button for Testing Sign In/Sign Up */}
-      <div className="fixed bottom-5 left-5">
+      <div className="fixed bottom-5 left-5 z-50">
         <button
           onClick={handleSignInOrSignUp}
           className="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md hover:bg-blue-600"

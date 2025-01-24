@@ -41,7 +41,7 @@ function Navbar_HomePage() {
 
   return (
     <div>
-      <nav className="bg-white opacity-100 shadow-lg rounded-[100px] mx-4 my-4 absolute top-0 left-0 right-0 flex items-center justify-between px-6 py-2">
+      <nav className="bg-white opacity-100 shadow-lg rounded-[100px] mx-4 my-4 relative flex items-center justify-between px-6 py-2">
         {/* Logo and Company Name */}
         <div className="flex items-center lg:ml-10">
           <img
