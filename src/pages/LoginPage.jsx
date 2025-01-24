@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const LoginPage = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-gradient-to-b from-[#2D406F] to-[#756992]">
-  <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-screen-lg px-4">
+<div className="flex justify-center items-center min-h-screen w-full bg-gradient-to-b from-[#2D406F] to-[#756992]">
+  <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-screen-lg px-4 overflow-hidden">
     {/* Logo and Text */}
     <div className="mt-10 mb-6 md:mt-0 flex flex-col items-center md:items-start md:w-1/2">
       <div className="flex items-center mb-6">
@@ -57,11 +57,12 @@ const LoginPage = () => {
       <img
         src="https://images.unsplash.com/photo-1561359313-0639aad49ca6?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="Background"
-        className="w-full h-[300px] sm:h-[400px] md:h-[500px] mt-8 md:mt-24 rounded-[40px] sm:rounded-[60px] md:rounded-[80px] shadow-md"
+        className="w-full h-[300px] sm:h-[400px] md:h-[500px] mt-8 md:mt-24 rounded-[40px] sm:rounded-[60px] md:rounded-[80px] shadow-md object-cover"
       />
     </div>
   </div>
 </div>
+
 
   );
 };

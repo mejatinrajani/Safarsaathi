@@ -6,6 +6,7 @@ import EmergencyPage from './pages/EmergencyPage'
 import ContactusPage from './pages/ContactusPage'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import TripPlanning from './pages/TripPlanning';
+import ExplorePageforPlaces from './pages/ExplorePageforPlaces'
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
        <Route path="/signup"  element={<SignUpPage/>} />
        <Route path="/home"  element={<HomePage/>} />
        <Route path="/emergency"  element={<EmergencyPage/>} />
-        <Route path="/contact"  element={<ContactusPage/>} />
-        <Route path="/tripplanning"  element={<TripPlanning/>} />
+       <Route path="/contact"  element={<ContactusPage/>} />
+       <Route path="/tripplanning"  element={<TripPlanning/>} />
+       <Route path="/explore/:id" element={<ExplorePageforPlaces />} />
       </Routes>
     </div>
   )
